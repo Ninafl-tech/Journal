@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  background-color: rgb(148, 217, 217);
+  height: 100vh;
+}
+#sidebar {
+  padding: 2%;
+  height: 100vh;
+  background-color: rgb(50, 132, 132);
+  color: #dddddd;
+}
+
+#content {
+  padding: 4%;
+  width: 80%;
+  overflow-x: auto;
+  border-radius: 2%;
+}
+.headDiv {
+  display: flex;
+  background-color: #dddddd;
+  justify-content: space-between;
+  padding: 10px;
+  color: rgb(50, 132, 132);
+}
+
+table {
+  font-family: arial, sans-serif;
+  overflow-x: auto;
+  max-width: 700px;
+  border-collapse: collapse;
+  width: 100%;
+}
+tbody {
+  overflow-x: auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  width: 100px;
+  padding: 8px;
+  cursor: pointer;
+}
+th,
+td:hover {
+  background-color: rgb(50, 132, 132);
+}
+
+.grades {
+  width: 100px;
+}
+tr td:first-child {
+  min-width: 200px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button {
+  background-color: rgb(25, 180, 180);
+  border-radius: 2px;
+  border: 0;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: rgb(50, 132, 132);
+}
+
+@media only screen and (max-width: 670px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
